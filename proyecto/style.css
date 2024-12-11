@@ -121,21 +121,30 @@ nav{
 
     & ul{
         display: none;
-       position: absolute; 
-       background-color: var(--primary-color);
-       
-       top: 0;
-       left: 0;
-       height: 100vh;
-       /*display: flex;*/
-       flex-direction: column;
-       width: 100%;
-       text-align: center;
-       padding: 20px 0;
+    }
+
+    & .active{
+        display: flex;
+        position: absolute; 
+        background-color: var(--primary-color);
+        top: 0;
+        left: 0;
+        height: 100vh;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 50px 0 20px;
     }
 
     & a{
         color: var(--white);
+    }
+
+    & span{
+        font-weight: 600;
+        position: absolute;
+        right: 10px;
+        top: 20px;
     }
 }
 
@@ -462,11 +471,19 @@ ul{
         gap: 100px;
     }
 
-    /*.nav-container{
+    .btn-nav{
+        display: none;
+    }
+
+    .nav-container{
         & ul{
       display: flex; 
+      
+      & a{
+        color: var(--text-color);
+      }
         } 
-    }*/
+    }
 }
 
 @media (min-width: 1024px){
